@@ -1,0 +1,377 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #FEDA77;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+h1 {
+    background-color: #F58529;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    background-color: #DD2A7B;
+    color: #FEDA77;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    padding: 10px;
+}
+
+h1, h2 {
+    font-weight: bold;
+    text-shadow:
+        2px 2px 0 #8134AF,
+        -2px -2px 0 #8134AF,
+        2px -2px 0 #8134AF,
+        -2px 2px 0 #8134AF;
+}
+
+/* INFORMASI */
+div.biodata {
+    margin: 30px auto;
+    width: 70%;
+    background-color: #515BD4;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+div.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.isi {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* FOTO HOVER */
+div.foto {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #FEDA77;
+    flex-shrink: 0;
+}
+
+div.foto img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.foto img.top {
+    opacity: 1;
+    z-index: 2;
+}
+
+.foto:hover img.top {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.foto img.bottom {
+    opacity: 0;
+    z-index: 1;
+}
+
+.foto:hover img.bottom {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#secret-toggle {
+    display: none;
+}
+
+.toggle-btn {
+    display: inline-block;
+    background-color: #F58529;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #DD2A7B;
+}
+
+.secret-box {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    background-color: #8134AF;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 0 15px;
+}
+
+#secret-toggle:checked ~ .secret-box {
+    max-height: 120px;
+    padding: 10px 15px;
+}
+
+/* TIPS */
+.food-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.Polaroid {
+    background-color: #F58529;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 240px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Polaroid:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #8134AF;
+}
+
+.Polaroid img {
+    width: 200px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.Polaroid p {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.accordion-container {
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+details {
+    background-color: #8134AF;
+    color: white;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+details:hover {
+    background-color: #DD2A7B;
+}
+
+summary {
+    font-weight: bold;
+    font-size: 18px;
+    outline: none;
+}
+
+details p {
+    margin-top: 10px;
+    padding-left: 15px;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #FEDA77;
+}
+
+/* HAL DILARANG */
+.parent {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.Hobi {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.Hobi .Foto {
+    background-color: #8134AF;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    width: 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Hobi .Foto:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px #DD2A7B;
+}
+
+.Hobi .Foto img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;   
+}
+
+.Hobi .Foto p {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.checklist-box {
+    width: 70%;
+    margin: 20px auto;
+    background-color: #515BD4;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.check-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+}
+
+.check-item input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.check-item:hover input ~ .checkmark {
+    background-color: #FEDA77;
+}
+
+.check-item input:checked ~ .checkmark {
+    background-color: #F58529;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check-item input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.check-item .checkmark:after {
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.check-item input:checked ~ span:last-child {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+/* KONTEN POSITIF */
+.Film.Favorit {
+    background-color: #DD2A7B;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 30px 0 20px 0;
+    padding: 10px;
+}
+
+.Film.Favorit h3 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.Fotofilm {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 95%;
+    margin: 30px auto;
+    flex-wrap: wrap;
+}
+
+.film {
+    flex: 1;
+    min-width: 180px;
+    max-width: 250px;
+    text-align: center;
+    background-color: #515BD4;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.film:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px #F58529;
+}
+
+.film img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    display: block;
+}
+
+.film p {
+    font-size: 16px;
+    margin-top: 15px;
+}
+

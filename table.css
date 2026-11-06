@@ -1,0 +1,91 @@
+
+body {
+    background-image: url('background.jpg'); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background-color: #ffa577;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    color: #ffffff;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    margin: 0;
+    text-shadow: 
+        -1px -1px 0 #4db8ff,  
+         1px -1px 0 #4db8ff,
+        -1px  1px 0 #4db8ff,
+         1px  1px 0 #4db8ff,
+         0 0 5px #4db8ff;
+}
+
+/* Navigasi Topnav */
+.topnav {
+    background-color: #ff5cbb;
+    padding: 10px 20px;
+}
+
+.topnav a {
+    color: #ffb3d9;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.topnav a:hover {
+    color: #ffffff;
+}
+
+/* Judul Tabel (H2) */
+h2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 28px;
+    color: #ffffff;
+    background-color: #ff5cbb;
+    text-align: center;
+    padding: 8px;
+    margin: 20px auto;
+    width: 95%;
+}
+
+/* Desain Tabel agar memiliki border dan warna sel yang tepat */
+table {
+    border-collapse: collapse;
+    width: 95%;
+    margin: 20px auto;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Kotak Header Tabel (TH) berwarna Pink */
+th {
+    border: 1px solid #000000;
+    background-color: #ff5cbb;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Kotak Isi Data Tabel (TD) */
+td {
+    border: 1px solid #000000;
+    background-color: #ff5cbb;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Membuat baris atau kolom tertentu menjadi kuning (sesuai gambar referensi) */
+tr th:nth-child(even), 
+tr td:nth-child(even) {
+    background-color: #ffcc4d;
+}

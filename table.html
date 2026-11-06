@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LAYOUT HTML DAN CSS</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>HEADER</h1>
+        </div>
+        
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="biodata.html">Biodata</a>
+            <a href="table.html">Table</a>
+            <a href="list.html">List</a>
+            <a href="sts_94_25.html">STS</a>
+        </div>
+        
+        <!-- Tabel Nilai Siswa -->
+        <h2>Table Nilai Siswa</h2>
+        <table>
+            <tr>
+                <th rowspan="2">No</th>
+                <th rowspan="2">Nama</th>
+                <th rowspan="2">Mata Pelajaran</th>
+                <th colspan="2">Nilai</th>
+            </tr>
+            <tr>
+                <th>Ulangan 1</th>
+                <th>Ulangan 2</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>Mary</th>
+                <th>Matematika</th>
+                <th>95</th>
+                <td>80</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>Milka</th>
+                <th>Inggris</th>
+                <th>100</th>
+                <td>96</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>Kimberly</th>
+                <th>IPS</th>
+                <th>87</th>
+                <td>93</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <th>Jacqueline</th>
+                <th>Penjas</th>
+                <th>80</th>
+                <td>92</td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <th>Ava</th>
+                <th>PPKN</th>
+                <th>84</th>
+                <td>80</td>
+            </tr>
+        </table>
+
+        <!-- Tabel Gabungan -->
+        <h2>Tabel Gabungan</h2>
+        <table class="tabel-gabungan">
+            <!-- Row 1 -->
+            <tr>
+                <td rowspan="3" colspan="2">1</td>
+                <td colspan="4">2</td>
+                <td colspan="3">3</td>
+                <td rowspan="3" colspan="2">4</td>
+                <td rowspan="3">5</td>
+                <td colspan="2">6</td>
+                <td rowspan="4">7</td>
+            </tr>
+            <!-- Row 2 -->
+            <tr>
+                <td colspan="2">8</td>
+                <td colspan="2">9</td>
+                <td colspan="3">10</td>
+                <td colspan="2">6</td>
+            </tr>
+            <!-- Row 3 -->
+            <tr>
+                <td colspan="2">11</td>
+                <td colspan="2">12</td>
+                <td>13</td>
+                <td colspan="2">14</td>
+                <td colspan="2" rowspan="2">15</td>
+            </tr>
+            <!-- Row 4 -->
+            <tr>
+                <td colspan="11">16</td>
+            </tr>
+            <!-- Row 5 -->
+            <tr>
+                <td colspan="3" rowspan="2">17</td>
+                <td colspan="4" rowspan="2">18</td>
+                <td colspan="3" rowspan="2">19</td>
+                <td colspan="4">20</td>
+            </tr>
+            <!-- Row 6 -->
+            <tr>
+                <td colspan="4">23</td>
+            </tr>
+        </table>
+    </body>
+</html>

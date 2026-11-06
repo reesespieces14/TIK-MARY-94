@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+}
+
+/* style header */
+.header {
+    background-color: antiquewhite;
+    padding: 20px;
+    text-align: center;
+}
+
+/* style untuk navigator menu */
+.topnav {
+    overflow: hidden;
+    background-color: rgb(255, 112, 166);
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: rgb(255, 214, 112);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: rgb(112, 214, 255);
+    color: rgb(255, 152, 112);
+}
+
+/* style pada content */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column.side {
+    width: 25%;
+}
+
+.column.middle {
+    width: 50%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    background-color: rgb(255, 152, 112);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style pada Table Nilai Siswa (Not Centered) */
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 20px 0; /* Align left with some top/bottom space */
+}
+
+table, th, td {
+    border: 1px solid Black;
+}
+
+th, td {
+    padding: 5px;
+}
+
+tr {
+    background-color: rgb(255, 112, 166);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(255, 214, 112);
+}
+
+tr:hover {
+    background-color: rgb(255, 152, 112);
+}
+
+ol {
+    list-style-type: upper-latin;
+}
+
+.icon-text-container {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.icon-text-container svg {
+    width: 24px;  
+    height: 24px; 
+    fill: currentColor; 
+}
+
+/* Style Khusus untuk Tabel Gabungan (Not Centered) */
+.tabel-gabungan {
+    width: 90%;
+    margin: 30px 0; /* Align left with some top/bottom space */
+    border-collapse: collapse;
+    background-color: #e5ecd8;
+}
+
+.tabel-gabungan, .tabel-gabungan th, .tabel-gabungan td {
+    border: 1px solid #7c9082;
+    text-align: center;
+    padding: 12px 8px;
+    font-weight: bold;
+    color: #2c3e35;
+}
+
+.tabel-gabungan td {
+    background-color: #e3ebd0;
+}
+
+.tabel-gabungan tr:hover td {
+    background-color: #d1dcbc;
+}
+
+/* Headings Left Aligned */
+h2 {
+    text-align: left;
+    color: #333;
+    margin-left: 10px;
+}
+
+
+
+
+
